@@ -5,7 +5,7 @@
 </div>
 <div class="heroes">
   <a *ngFor="let hero of heroes" [routerLink]="['/hero', hero.id]">
-    <img [src]="hero.image" [alt]="hero.name">
+    <img [src]="hero.images.sm" [alt]="hero.name">
   </a>
 </div>
 
