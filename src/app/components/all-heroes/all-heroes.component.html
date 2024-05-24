@@ -3,6 +3,12 @@
 <div>
   <button (click)="addHeroes()">Chargement</button>
 </div>
-<div>
-  {{ heroes | json }}
+<div class="heroes">
+  <a *ngFor="let hero of heroes" [routerLink]="['/hero', hero.id]">
+    <img [src]="hero.image" [alt]="hero.name">
+  </a>
 </div>
+
+<!--@for (hero of heroes; track $index){-->
+<!--  <a href="">{{ hero.name }}</a>-->
+<!--}-->

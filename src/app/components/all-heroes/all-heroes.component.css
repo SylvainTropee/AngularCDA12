@@ -5,3 +5,7 @@ div{
 button{
   @apply m-2 p-4 bg-blue-500 hover:bg-fuchsia-500 text-white text-sm font-medium rounded-md
 }
+
+.heroes{
+  @apply flex flex-wrap justify-center gap-1
+}
